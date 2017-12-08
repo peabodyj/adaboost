@@ -16,6 +16,8 @@ if len(sys.argv) > 5:
 	test = sys.argv[3]
 	pos_lbl = int(sys.argv[4])
 	neg_lbl = int(sys.argv[5])
+else:
+    print("Not enough arguments, using defaults.")
 
 
 ada = AdaBoost(stumps, train, test, pos_lbl, neg_lbl)
