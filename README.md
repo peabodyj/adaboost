@@ -1,6 +1,8 @@
 ## AdaBoost Implementation with NumPy
 AdaBoost is a machine learning meta-algorithm that combines weighted weak learners to create a more accurate label prediction. The weak learners in this algorithm are called stumps. The stump will split the data into two sections - a positive labeled side and a negative labeled side. As each weak learner is added, the weights are reassigned based on their effectiveness.
 
+Find more information about AdaBoost in the [wikipedia article](https://en.wikipedia.org/wiki/AdaBoost).
+
 ## Data
 We borrow a US Postal Service zipcode data set filled with handwritten digits. Each tuple is made up of 256 features which represent the gray scale value of each pixel in a 16x16 image. Field 1 in the data set is the true label for that handwritten number (ranging from 0 to 9). This algorithm can compare any two labels in the data set specified on runtime.
 
